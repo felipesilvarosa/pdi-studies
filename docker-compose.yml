@@ -10,7 +10,7 @@ services:
       POSTGRES_PASSWORD: admin
       POSTGRES_DB: db_pdi
     volumes:
-      - ./db-data/:/var/lib/postgresql/data/
+      - postgres-db:/data/postgres
     ports:
       - "5432:5432"
 
