@@ -8,9 +8,9 @@ services:
     environment:
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: admin
-      PGDATA: /data/postgres
+      POSTGRES_DB: db_pdi
     volumes:
-      - postgres-db:/data/postgres
+      - ./db-data/:/var/lib/postgresql/data/
     ports:
       - "5432:5432"
 
