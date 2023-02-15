@@ -13,3 +13,9 @@ spring:
         format_sql: true
     database: postgresql
     database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+jwt:
+  secret: secret
+  expiration: 86400000
+  header: Authorization
+  prefix: Bearer
