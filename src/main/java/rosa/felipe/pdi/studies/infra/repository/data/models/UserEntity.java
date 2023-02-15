@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import rosa.felipe.pdi.studies.infra.configuration.Role;
 
 @Data
 @Builder
@@ -20,4 +21,8 @@ public class UserEntity {
     private String userName;
     private String email;
     private String password;
+
+    @Enumerated(EnumType.STRING)
+    private Role role;
+
 }
